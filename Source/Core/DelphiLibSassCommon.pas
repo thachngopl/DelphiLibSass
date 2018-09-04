@@ -9,13 +9,12 @@ const
   cLibSassName = 'libsass.dll';
 
 type
-  TSass_File_Context = Pointer;
-  TSass_Compiler = Pointer;
-  TSass_Context = Pointer;
-  TSass_included_files = Pointer;
-  TSass_Data_Context = Pointer;
+  TSass_File_Context = IntPtr;
+  TSass_Compiler =  IntPtr;
+  TSass_Context = IntPtr;
+  TSass_included_files = IntPtr;
+  TSass_Data_Context = IntPtr;
 
-  //{$X+}
   PSass_IncludeFiles = ^TSass_IncludeFiles;
   TSass_IncludeFiles = record
     IncludeFile: PAnsiChar;
